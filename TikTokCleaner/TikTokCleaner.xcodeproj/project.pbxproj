@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21658B47B5BA79D7F093EAA2 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7298B07F8108619EF6213 /* AppEnvironment.swift */; };
+		1A24908331938AB5451BEB64 /* TikTokCleanerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FE56B12A7C919E01E7E0BB /* TikTokCleanerApp.swift */; };
+		82D89BA06AE86D2544747625 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D33F59E076B724D2E9A55DC /* AuthManager.swift */; };
+		1E7257CEE73E7D569825A54F /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A91EF40E24077D2448302D /* AuthState.swift */; };
+		AB31B10567730CA10EB91367 /* TikTokOAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349EAB7D4DBAB02C5B67E16 /* TikTokOAuthService.swift */; };
+		F387752056DF55672A021477 /* TikTokSessionAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422B28AF370954339D5DD36 /* TikTokSessionAuthenticator.swift */; };
+		8B5CFB0218DD7BF68620EB8B /* CircuitBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7EEBB2B3318C907BAB8E22 /* CircuitBreaker.swift */; };
+		EDD17411EC25483281A61E49 /* CleanupConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB8B066D820252172DDCF2 /* CleanupConfiguration.swift */; };
+		31933D3884AC22B72606912C /* CleanupEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3493B46AF49F6C5680BD00F6 /* CleanupEngine.swift */; };
+		EB34624612334DBF51CF8DA0 /* ContentScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E81C881931B574FD2D85DC6 /* ContentScanner.swift */; };
+		B337DF41B348405EC0C72D45 /* GDPRArchiveScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC6B1275121E20E315CB78 /* GDPRArchiveScanner.swift */; };
+		DCEE01E943B88E485FCFF37A /* RemoteContentScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96141211E07CABE5DF43C861 /* RemoteContentScanner.swift */; };
+		9A7FB6FC4E429C7ACF965395 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B6A31CF51245BD0A16376 /* FavoritesManager.swift */; };
+		81C1898B4ABE0D7727443358 /* LikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C8CA13AC7784B9336AC21 /* LikeManager.swift */; };
+		878E9845DBA6E93CFFDC010B /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D390C78763D5D4D444891A /* AppLogger.swift */; };
+		EADFACC46E69F224B3534CE1 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125D348269172C47503CB86 /* LogEntry.swift */; };
+		195A2A429AF64B5F044BC001 /* CleanableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CD14A7B0FE8378A8413DE /* CleanableItem.swift */; };
+		67681D8F13AB468C7701801E /* CleanupCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2E59F1863DDF46540142CB /* CleanupCategory.swift */; };
+		0283D0CAF73D359911413536 /* CleanupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D921A6231DF203374003055 /* CleanupError.swift */; };
+		F1D0E7BD0279070B738241D3 /* CleanupSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CC191A0D8BA606673A5C3C /* CleanupSummary.swift */; };
+		BA4E7DF342992EA68BC942B0 /* CleanupTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6460C9C9A13A59C8246A4F7 /* CleanupTask.swift */; };
+		4918D0B2FAE3B874C44E8C6A /* GDPRDataExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7949F2EF7A152AEDF5E79453 /* GDPRDataExport.swift */; };
+		7A5E5ABE189EF93E5B2E13C0 /* SingleLikeTestReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C36984A9A754004228594 /* SingleLikeTestReport.swift */; };
+		51C9B25459FB6D40D56C1EF6 /* TikTokAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E7A038309D60DAD118544 /* TikTokAccount.swift */; };
+		0E5BA2CA6AB92D33D2021874 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45155BFA3F5D2B31ED5998 /* PostManager.swift */; };
+		6F95138753BDD44CDFA5DC3E /* CleanupProgressState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CD38EB4D7AF7A827C450B2 /* CleanupProgressState.swift */; };
+		92F83D36A6178CA074827895 /* ProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE7EADB85654439B9575C7 /* ProgressManager.swift */; };
+		00B2DF3BD43CC8F5E336F1E4 /* RepostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E7E3C1D1A4F785692ED6FC /* RepostManager.swift */; };
+		9A0F49902BAD001337BBC640 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4EE213B65E72C78C4FCB10 /* KeychainManager.swift */; };
+		B1DA2FE992EE0EC0C85CE8F3 /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332B257378F609A841FD7E /* StorageKey.swift */; };
+		F2064B737AFE884EA8B801C0 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FF6BF8EEF7BF13F20964E6 /* AppSettings.swift */; };
+		9A71DFB7C07DC89B0226B87E /* RateLimitSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7886C82D50D61F599FC72625 /* RateLimitSettings.swift */; };
+		7AD538C1099098FC19266940 /* QueueOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775EB9241FBAB281E3FEA85 /* QueueOperation.swift */; };
+		036D2BD7B48CC90F9F42A86F /* RetryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F1C068F1A75274CFD0C84 /* RetryStrategy.swift */; };
+		B03E29F3E40BF3F2F2FAC938 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90EDB5FE1E0083267AA34C7 /* TaskQueue.swift */; };
+		B21D33F5646452219F1C21E9 /* TikTokAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB87FFC438BD927842CBFC56 /* TikTokAPIService.swift */; };
+		02ED95D79B6EABF0DA6F3EF1 /* TikTokEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BBAAD583A5C5E861D4835A /* TikTokEndpoint.swift */; };
+		21992F7DCEF96A85A9E8954B /* TikTokInternalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E676D24866FFC6E74152F /* TikTokInternalClient.swift */; };
+		C17E6C7F3A7873E4F09559E3 /* TikTokRateLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4FFA8E3C71C454D6243C4 /* TikTokRateLimiter.swift */; };
+		4CB8E07C25F2DB95BA0A5F6F /* WebKitSessionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C13B0E9D0AE5EFC41B485B /* WebKitSessionExecutor.swift */; };
+		9F8D79346D0110067D566563 /* EmbeddedWebLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D298C9E9162F765AC1BC327E /* EmbeddedWebLoginView.swift */; };
+		11BCB43508064D45BE04B820 /* LoginSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CB9A50FCD02913507867DE /* LoginSheetView.swift */; };
+		092E19696EB1116A56171FF8 /* CustomCleanupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EDA2D6411F95C9FC0C2305 /* CustomCleanupView.swift */; };
+		5F9FF62D96CD1A7B1A6A3D2A /* CustomCleanupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29996BDB0DE0C0EDD148A672 /* CustomCleanupViewModel.swift */; };
+		93008A39417910AF1ABD8A23 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9F5CFBFC80E7FB71551490 /* DashboardView.swift */; };
+		D3C583B35AE20FFF7076774A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119325E435CB93D3C16072A6 /* DashboardViewModel.swift */; };
+		031BFA88535AFEF0573FBEBB /* SingleLikeTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009116267FEB38B1C4C7F752 /* SingleLikeTestView.swift */; };
+		4BA62469FC70CCA924B2AEF6 /* SingleLikeTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7552D1D85E4BF4A9327C1 /* SingleLikeTestViewModel.swift */; };
+		83916377A0B29C83CCA51604 /* CleanupProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64193EE4707A8B600D5881DA /* CleanupProgressView.swift */; };
+		BD843E03A57485A7E3941D3B /* CleanupProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D291E2FD7F2C44126B9907 /* CleanupProgressViewModel.swift */; };
+		B0F4ADBB94DA0CCDEB8A301C /* GDPRImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB935240BB516976240F4FB8 /* GDPRImportView.swift */; };
+		870A9560FEBFF97DB744E560 /* CleanableItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B164F3CF62285B0A4EDB9080 /* CleanableItemRow.swift */; };
+		455592D1BB24959E757F24A0 /* FilterSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93215DEBFD3B86ECDAA5E3D /* FilterSheetView.swift */; };
+		9831742E346AACABB3A0205C /* ManualSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7291A9D9423CA5B175399 /* ManualSelectionView.swift */; };
+		5B54E7875B5E65AADD7B7313 /* CleanupResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B81061AB39B76814B1FAABA /* CleanupResultsView.swift */; };
+		5251B68EBFA723FDD3058735 /* ErrorDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89E1025970C36A4060A3583 /* ErrorDetailSheet.swift */; };
+		8D7AFC11CAD1B22DA5E03075 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114CB95B731449B157704FE /* ScannerView.swift */; };
+		E5A75B99D85AE620FC6200A6 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C075A656836348D666C41E /* ScannerViewModel.swift */; };
+		2DAC94FE0C3D8036315F99D8 /* DeveloperLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13B067229CD7DF8C965DB3 /* DeveloperLogsView.swift */; };
+		910019103CC59F49ACE7BC92 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D32A2CA21F6C7EE519F8CF /* SettingsView.swift */; };
+		51E699BE57F28622D290D732 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A403B5E31C385D7018EDAE /* ColorTheme.swift */; };
+		2F937DC3006FDE40AAF74322 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E1AD62C5E3EEFC5F29CE92 /* BadgeView.swift */; };
+		FC8B14A87D8B5D25B24DF0C4 /* ErrorAlertSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2861B8FF5F7435EC4D61C8 /* ErrorAlertSheet.swift */; };
+		09036DFF4B385DF53F9CC734 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0775FF9FD2033D0F328017 /* GlassCard.swift */; };
+		25643C332010E7641BD6BDC5 /* ModernProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD41489A91B33754502AC30 /* ModernProgressBar.swift */; };
+		FA8AB2A3579E651BB9EE6972 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B21033F131D0960BBCF40CD /* StatCard.swift */; };
+		256D78344AEC62FA30DD7916 /* TikTokButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E1FF6EE81BA692A1DAD95 /* TikTokButton.swift */; };
+		32E8FA5610FFFE6AA1077E2E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C77AAF56719A281F1548E1 /* Typography.swift */; };
+		098C8977FC9AA24432506BE5 /* CleanupEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484434BE72318A4F76CD457 /* CleanupEngineTests.swift */; };
+		5F7AB4727211E6DAE94ED63C /* TaskQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AD733030ED50AF1DD7AC2 /* TaskQueueTests.swift */; };
+		16E48C96B5F4D322B78243F4 /* TikTokCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B07DFE153D841ADB6E4284 /* TikTokCleanerTests.swift */; };
+		920CEDE90B133FE31DC91E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4CBBB97F3E64C9E47D4BB4 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A9C39C2051CFD4E17C52A04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA43E02019826B730E766B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 786E16E2A5FF21CC8F2CD5BF;
+			remoteInfo = TikTokCleaner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8283F4B4B9BD80FF088E3C95 /* TikTokCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE41063B210D64333B1CADE /* TikTokCleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikTokCleanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C7298B07F8108619EF6213 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/App/AppEnvironment.swift"; sourceTree = "<group>"; };
+		37FE56B12A7C919E01E7E0BB /* TikTokCleanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/App/TikTokCleanerApp.swift"; sourceTree = "<group>"; };
+		6D33F59E076B724D2E9A55DC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Authentication/AuthManager.swift"; sourceTree = "<group>"; };
+		16A91EF40E24077D2448302D /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Authentication/AuthState.swift"; sourceTree = "<group>"; };
+		D349EAB7D4DBAB02C5B67E16 /* TikTokOAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Authentication/TikTokOAuthService.swift"; sourceTree = "<group>"; };
+		0422B28AF370954339D5DD36 /* TikTokSessionAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Authentication/TikTokSessionAuthenticator.swift"; sourceTree = "<group>"; };
+		7F7EEBB2B3318C907BAB8E22 /* CircuitBreaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/CleanupEngine/CircuitBreaker.swift"; sourceTree = "<group>"; };
+		CDBB8B066D820252172DDCF2 /* CleanupConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/CleanupEngine/CleanupConfiguration.swift"; sourceTree = "<group>"; };
+		3493B46AF49F6C5680BD00F6 /* CleanupEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/CleanupEngine/CleanupEngine.swift"; sourceTree = "<group>"; };
+		1E81C881931B574FD2D85DC6 /* ContentScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/ContentScanner/ContentScanner.swift"; sourceTree = "<group>"; };
+		3EDC6B1275121E20E315CB78 /* GDPRArchiveScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/ContentScanner/GDPRArchiveScanner.swift"; sourceTree = "<group>"; };
+		96141211E07CABE5DF43C861 /* RemoteContentScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/ContentScanner/RemoteContentScanner.swift"; sourceTree = "<group>"; };
+		849B6A31CF51245BD0A16376 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/FavoritesManager/FavoritesManager.swift"; sourceTree = "<group>"; };
+		5C1C8CA13AC7784B9336AC21 /* LikeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/LikeManager/LikeManager.swift"; sourceTree = "<group>"; };
+		00D390C78763D5D4D444891A /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Logging/AppLogger.swift"; sourceTree = "<group>"; };
+		A125D348269172C47503CB86 /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Logging/LogEntry.swift"; sourceTree = "<group>"; };
+		091CD14A7B0FE8378A8413DE /* CleanableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/CleanableItem.swift"; sourceTree = "<group>"; };
+		CA2E59F1863DDF46540142CB /* CleanupCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/CleanupCategory.swift"; sourceTree = "<group>"; };
+		9D921A6231DF203374003055 /* CleanupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/CleanupError.swift"; sourceTree = "<group>"; };
+		98CC191A0D8BA606673A5C3C /* CleanupSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/CleanupSummary.swift"; sourceTree = "<group>"; };
+		A6460C9C9A13A59C8246A4F7 /* CleanupTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/CleanupTask.swift"; sourceTree = "<group>"; };
+		7949F2EF7A152AEDF5E79453 /* GDPRDataExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/GDPRDataExport.swift"; sourceTree = "<group>"; };
+		4D6C36984A9A754004228594 /* SingleLikeTestReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/SingleLikeTestReport.swift"; sourceTree = "<group>"; };
+		428E7A038309D60DAD118544 /* TikTokAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Models/TikTokAccount.swift"; sourceTree = "<group>"; };
+		1A45155BFA3F5D2B31ED5998 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/PostManager/PostManager.swift"; sourceTree = "<group>"; };
+		D6CD38EB4D7AF7A827C450B2 /* CleanupProgressState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/ProgressManager/CleanupProgressState.swift"; sourceTree = "<group>"; };
+		99DE7EADB85654439B9575C7 /* ProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/ProgressManager/ProgressManager.swift"; sourceTree = "<group>"; };
+		12E7E3C1D1A4F785692ED6FC /* RepostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/RepostManager/RepostManager.swift"; sourceTree = "<group>"; };
+		8D4EE213B65E72C78C4FCB10 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/SecureStorage/KeychainManager.swift"; sourceTree = "<group>"; };
+		E4332B257378F609A841FD7E /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/SecureStorage/StorageKey.swift"; sourceTree = "<group>"; };
+		03FF6BF8EEF7BF13F20964E6 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Settings/AppSettings.swift"; sourceTree = "<group>"; };
+		7886C82D50D61F599FC72625 /* RateLimitSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Settings/RateLimitSettings.swift"; sourceTree = "<group>"; };
+		8775EB9241FBAB281E3FEA85 /* QueueOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TaskQueue/QueueOperation.swift"; sourceTree = "<group>"; };
+		E72F1C068F1A75274CFD0C84 /* RetryStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TaskQueue/RetryStrategy.swift"; sourceTree = "<group>"; };
+		D90EDB5FE1E0083267AA34C7 /* TaskQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TaskQueue/TaskQueue.swift"; sourceTree = "<group>"; };
+		CB87FFC438BD927842CBFC56 /* TikTokAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TikTokService/TikTokAPIService.swift"; sourceTree = "<group>"; };
+		D5BBAAD583A5C5E861D4835A /* TikTokEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TikTokService/TikTokEndpoint.swift"; sourceTree = "<group>"; };
+		5A7E676D24866FFC6E74152F /* TikTokInternalClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TikTokService/TikTokInternalClient.swift"; sourceTree = "<group>"; };
+		AAC4FFA8E3C71C454D6243C4 /* TikTokRateLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TikTokService/TikTokRateLimiter.swift"; sourceTree = "<group>"; };
+		61C13B0E9D0AE5EFC41B485B /* WebKitSessionExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/TikTokService/WebKitSessionExecutor.swift"; sourceTree = "<group>"; };
+		D298C9E9162F765AC1BC327E /* EmbeddedWebLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/AuthenticationUI/EmbeddedWebLoginView.swift"; sourceTree = "<group>"; };
+		A7CB9A50FCD02913507867DE /* LoginSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/AuthenticationUI/LoginSheetView.swift"; sourceTree = "<group>"; };
+		51EDA2D6411F95C9FC0C2305 /* CustomCleanupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/CustomCleanup/CustomCleanupView.swift"; sourceTree = "<group>"; };
+		29996BDB0DE0C0EDD148A672 /* CustomCleanupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/CustomCleanup/CustomCleanupViewModel.swift"; sourceTree = "<group>"; };
+		8D9F5CFBFC80E7FB71551490 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Dashboard/DashboardView.swift"; sourceTree = "<group>"; };
+		119325E435CB93D3C16072A6 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Dashboard/DashboardViewModel.swift"; sourceTree = "<group>"; };
+		009116267FEB38B1C4C7F752 /* SingleLikeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/DeveloperTest/SingleLikeTestView.swift"; sourceTree = "<group>"; };
+		50E7552D1D85E4BF4A9327C1 /* SingleLikeTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/DeveloperTest/SingleLikeTestViewModel.swift"; sourceTree = "<group>"; };
+		64193EE4707A8B600D5881DA /* CleanupProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Execution/CleanupProgressView.swift"; sourceTree = "<group>"; };
+		94D291E2FD7F2C44126B9907 /* CleanupProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Execution/CleanupProgressViewModel.swift"; sourceTree = "<group>"; };
+		BB935240BB516976240F4FB8 /* GDPRImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/GDPRImport/GDPRImportView.swift"; sourceTree = "<group>"; };
+		B164F3CF62285B0A4EDB9080 /* CleanableItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/ManualSelection/CleanableItemRow.swift"; sourceTree = "<group>"; };
+		D93215DEBFD3B86ECDAA5E3D /* FilterSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/ManualSelection/FilterSheetView.swift"; sourceTree = "<group>"; };
+		41A7291A9D9423CA5B175399 /* ManualSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/ManualSelection/ManualSelectionView.swift"; sourceTree = "<group>"; };
+		1B81061AB39B76814B1FAABA /* CleanupResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Results/CleanupResultsView.swift"; sourceTree = "<group>"; };
+		A89E1025970C36A4060A3583 /* ErrorDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Results/ErrorDetailSheet.swift"; sourceTree = "<group>"; };
+		0114CB95B731449B157704FE /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Scanner/ScannerView.swift"; sourceTree = "<group>"; };
+		42C075A656836348D666C41E /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Scanner/ScannerViewModel.swift"; sourceTree = "<group>"; };
+		CA13B067229CD7DF8C965DB3 /* DeveloperLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/SettingsUI/DeveloperLogsView.swift"; sourceTree = "<group>"; };
+		78D32A2CA21F6C7EE519F8CF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/SettingsUI/SettingsView.swift"; sourceTree = "<group>"; };
+		B3A403B5E31C385D7018EDAE /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/ColorTheme.swift"; sourceTree = "<group>"; };
+		A2E1AD62C5E3EEFC5F29CE92 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/Components/BadgeView.swift"; sourceTree = "<group>"; };
+		5D2861B8FF5F7435EC4D61C8 /* ErrorAlertSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/Components/ErrorAlertSheet.swift"; sourceTree = "<group>"; };
+		AF0775FF9FD2033D0F328017 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/Components/GlassCard.swift"; sourceTree = "<group>"; };
+		DCD41489A91B33754502AC30 /* ModernProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/Components/ModernProgressBar.swift"; sourceTree = "<group>"; };
+		4B21033F131D0960BBCF40CD /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/Components/StatCard.swift"; sourceTree = "<group>"; };
+		B27E1FF6EE81BA692A1DAD95 /* TikTokButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/Components/TikTokButton.swift"; sourceTree = "<group>"; };
+		F5C77AAF56719A281F1548E1 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/UI/Theme/Typography.swift"; sourceTree = "<group>"; };
+		1484434BE72318A4F76CD457 /* CleanupEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Tests/CleanupEngineTests.swift"; sourceTree = "<group>"; };
+		8C3AD733030ED50AF1DD7AC2 /* TaskQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Tests/TaskQueueTests.swift"; sourceTree = "<group>"; };
+		04B07DFE153D841ADB6E4284 /* TikTokCleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TikTokCleaner/Tests/TikTokCleanerTests.swift"; sourceTree = "<group>"; };
+		5E4CBBB97F3E64C9E47D4BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "TikTokCleaner/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0812686A1F72C2D55E1F6DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5980A7394326B22AC661B135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C999E731352905727541C3C = {
+			isa = PBXGroup;
+			children = (
+				79C7298B07F8108619EF6213 /* AppEnvironment.swift */,
+				37FE56B12A7C919E01E7E0BB /* TikTokCleanerApp.swift */,
+				6D33F59E076B724D2E9A55DC /* AuthManager.swift */,
+				16A91EF40E24077D2448302D /* AuthState.swift */,
+				D349EAB7D4DBAB02C5B67E16 /* TikTokOAuthService.swift */,
+				0422B28AF370954339D5DD36 /* TikTokSessionAuthenticator.swift */,
+				7F7EEBB2B3318C907BAB8E22 /* CircuitBreaker.swift */,
+				CDBB8B066D820252172DDCF2 /* CleanupConfiguration.swift */,
+				3493B46AF49F6C5680BD00F6 /* CleanupEngine.swift */,
+				1E81C881931B574FD2D85DC6 /* ContentScanner.swift */,
+				3EDC6B1275121E20E315CB78 /* GDPRArchiveScanner.swift */,
+				96141211E07CABE5DF43C861 /* RemoteContentScanner.swift */,
+				849B6A31CF51245BD0A16376 /* FavoritesManager.swift */,
+				5C1C8CA13AC7784B9336AC21 /* LikeManager.swift */,
+				00D390C78763D5D4D444891A /* AppLogger.swift */,
+				A125D348269172C47503CB86 /* LogEntry.swift */,
+				091CD14A7B0FE8378A8413DE /* CleanableItem.swift */,
+				CA2E59F1863DDF46540142CB /* CleanupCategory.swift */,
+				9D921A6231DF203374003055 /* CleanupError.swift */,
+				98CC191A0D8BA606673A5C3C /* CleanupSummary.swift */,
+				A6460C9C9A13A59C8246A4F7 /* CleanupTask.swift */,
+				7949F2EF7A152AEDF5E79453 /* GDPRDataExport.swift */,
+				4D6C36984A9A754004228594 /* SingleLikeTestReport.swift */,
+				428E7A038309D60DAD118544 /* TikTokAccount.swift */,
+				1A45155BFA3F5D2B31ED5998 /* PostManager.swift */,
+				D6CD38EB4D7AF7A827C450B2 /* CleanupProgressState.swift */,
+				99DE7EADB85654439B9575C7 /* ProgressManager.swift */,
+				12E7E3C1D1A4F785692ED6FC /* RepostManager.swift */,
+				8D4EE213B65E72C78C4FCB10 /* KeychainManager.swift */,
+				E4332B257378F609A841FD7E /* StorageKey.swift */,
+				03FF6BF8EEF7BF13F20964E6 /* AppSettings.swift */,
+				7886C82D50D61F599FC72625 /* RateLimitSettings.swift */,
+				8775EB9241FBAB281E3FEA85 /* QueueOperation.swift */,
+				E72F1C068F1A75274CFD0C84 /* RetryStrategy.swift */,
+				D90EDB5FE1E0083267AA34C7 /* TaskQueue.swift */,
+				CB87FFC438BD927842CBFC56 /* TikTokAPIService.swift */,
+				D5BBAAD583A5C5E861D4835A /* TikTokEndpoint.swift */,
+				5A7E676D24866FFC6E74152F /* TikTokInternalClient.swift */,
+				AAC4FFA8E3C71C454D6243C4 /* TikTokRateLimiter.swift */,
+				61C13B0E9D0AE5EFC41B485B /* WebKitSessionExecutor.swift */,
+				D298C9E9162F765AC1BC327E /* EmbeddedWebLoginView.swift */,
+				A7CB9A50FCD02913507867DE /* LoginSheetView.swift */,
+				51EDA2D6411F95C9FC0C2305 /* CustomCleanupView.swift */,
+				29996BDB0DE0C0EDD148A672 /* CustomCleanupViewModel.swift */,
+				8D9F5CFBFC80E7FB71551490 /* DashboardView.swift */,
+				119325E435CB93D3C16072A6 /* DashboardViewModel.swift */,
+				009116267FEB38B1C4C7F752 /* SingleLikeTestView.swift */,
+				50E7552D1D85E4BF4A9327C1 /* SingleLikeTestViewModel.swift */,
+				64193EE4707A8B600D5881DA /* CleanupProgressView.swift */,
+				94D291E2FD7F2C44126B9907 /* CleanupProgressViewModel.swift */,
+				BB935240BB516976240F4FB8 /* GDPRImportView.swift */,
+				B164F3CF62285B0A4EDB9080 /* CleanableItemRow.swift */,
+				D93215DEBFD3B86ECDAA5E3D /* FilterSheetView.swift */,
+				41A7291A9D9423CA5B175399 /* ManualSelectionView.swift */,
+				1B81061AB39B76814B1FAABA /* CleanupResultsView.swift */,
+				A89E1025970C36A4060A3583 /* ErrorDetailSheet.swift */,
+				0114CB95B731449B157704FE /* ScannerView.swift */,
+				42C075A656836348D666C41E /* ScannerViewModel.swift */,
+				CA13B067229CD7DF8C965DB3 /* DeveloperLogsView.swift */,
+				78D32A2CA21F6C7EE519F8CF /* SettingsView.swift */,
+				B3A403B5E31C385D7018EDAE /* ColorTheme.swift */,
+				A2E1AD62C5E3EEFC5F29CE92 /* BadgeView.swift */,
+				5D2861B8FF5F7435EC4D61C8 /* ErrorAlertSheet.swift */,
+				AF0775FF9FD2033D0F328017 /* GlassCard.swift */,
+				DCD41489A91B33754502AC30 /* ModernProgressBar.swift */,
+				4B21033F131D0960BBCF40CD /* StatCard.swift */,
+				B27E1FF6EE81BA692A1DAD95 /* TikTokButton.swift */,
+				F5C77AAF56719A281F1548E1 /* Typography.swift */,
+				1484434BE72318A4F76CD457 /* CleanupEngineTests.swift */,
+				8C3AD733030ED50AF1DD7AC2 /* TaskQueueTests.swift */,
+				04B07DFE153D841ADB6E4284 /* TikTokCleanerTests.swift */,
+				5E4CBBB97F3E64C9E47D4BB4 /* Assets.xcassets */,
+				6D159F361021D92BC3E10E55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D159F361021D92BC3E10E55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8283F4B4B9BD80FF088E3C95 /* TikTokCleaner.app */,
+				8CE41063B210D64333B1CADE /* TikTokCleanerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		786E16E2A5FF21CC8F2CD5BF /* TikTokCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B210DD1C3B572803298B3FB /* Build configuration list for PBXNativeTarget "TikTokCleaner" */;
+			buildPhases = (
+				0DBDD313236E80205C59E566 /* Sources */,
+				A0812686A1F72C2D55E1F6DE /* Frameworks */,
+				1363E74374AB9928053079BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikTokCleaner;
+			productName = TikTokCleaner;
+			productReference = 8283F4B4B9BD80FF088E3C95 /* TikTokCleaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E1690E98030429315D6F148 /* TikTokCleanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545CD3DA43A5A0865BCB5F30 /* Build configuration list for PBXNativeTarget "TikTokCleanerTests" */;
+			buildPhases = (
+				13B7451FC8A4D1526B49E800 /* Sources */,
+				5980A7394326B22AC661B135 /* Frameworks */,
+				3040473E96FEFD4AE67BEE15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				272F841800B4D04C3070F12E /* PBXTargetDependency */,
+			);
+			name = TikTokCleanerTests;
+			productName = TikTokCleanerTests;
+			productReference = 8CE41063B210D64333B1CADE /* TikTokCleanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFA43E02019826B730E766B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					786E16E2A5FF21CC8F2CD5BF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1E1690E98030429315D6F148 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 786E16E2A5FF21CC8F2CD5BF;
+					};
+				};
+			};
+			buildConfigurationList = 66C115E9D28FAC0EC0475D61 /* Build configuration list for PBXProject "TikTokCleaner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				Base,
+			);
+			mainGroup = 5C999E731352905727541C3C;
+			productRefGroup = 6D159F361021D92BC3E10E55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				786E16E2A5FF21CC8F2CD5BF /* TikTokCleaner */,
+				1E1690E98030429315D6F148 /* TikTokCleanerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1363E74374AB9928053079BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920CEDE90B133FE31DC91E28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3040473E96FEFD4AE67BEE15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DBDD313236E80205C59E566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21658B47B5BA79D7F093EAA2 /* AppEnvironment.swift in Sources */,
+				1A24908331938AB5451BEB64 /* TikTokCleanerApp.swift in Sources */,
+				82D89BA06AE86D2544747625 /* AuthManager.swift in Sources */,
+				1E7257CEE73E7D569825A54F /* AuthState.swift in Sources */,
+				AB31B10567730CA10EB91367 /* TikTokOAuthService.swift in Sources */,
+				F387752056DF55672A021477 /* TikTokSessionAuthenticator.swift in Sources */,
+				8B5CFB0218DD7BF68620EB8B /* CircuitBreaker.swift in Sources */,
+				EDD17411EC25483281A61E49 /* CleanupConfiguration.swift in Sources */,
+				31933D3884AC22B72606912C /* CleanupEngine.swift in Sources */,
+				EB34624612334DBF51CF8DA0 /* ContentScanner.swift in Sources */,
+				B337DF41B348405EC0C72D45 /* GDPRArchiveScanner.swift in Sources */,
+				DCEE01E943B88E485FCFF37A /* RemoteContentScanner.swift in Sources */,
+				9A7FB6FC4E429C7ACF965395 /* FavoritesManager.swift in Sources */,
+				81C1898B4ABE0D7727443358 /* LikeManager.swift in Sources */,
+				878E9845DBA6E93CFFDC010B /* AppLogger.swift in Sources */,
+				EADFACC46E69F224B3534CE1 /* LogEntry.swift in Sources */,
+				195A2A429AF64B5F044BC001 /* CleanableItem.swift in Sources */,
+				67681D8F13AB468C7701801E /* CleanupCategory.swift in Sources */,
+				0283D0CAF73D359911413536 /* CleanupError.swift in Sources */,
+				F1D0E7BD0279070B738241D3 /* CleanupSummary.swift in Sources */,
+				BA4E7DF342992EA68BC942B0 /* CleanupTask.swift in Sources */,
+				4918D0B2FAE3B874C44E8C6A /* GDPRDataExport.swift in Sources */,
+				7A5E5ABE189EF93E5B2E13C0 /* SingleLikeTestReport.swift in Sources */,
+				51C9B25459FB6D40D56C1EF6 /* TikTokAccount.swift in Sources */,
+				0E5BA2CA6AB92D33D2021874 /* PostManager.swift in Sources */,
+				6F95138753BDD44CDFA5DC3E /* CleanupProgressState.swift in Sources */,
+				92F83D36A6178CA074827895 /* ProgressManager.swift in Sources */,
+				00B2DF3BD43CC8F5E336F1E4 /* RepostManager.swift in Sources */,
+				9A0F49902BAD001337BBC640 /* KeychainManager.swift in Sources */,
+				B1DA2FE992EE0EC0C85CE8F3 /* StorageKey.swift in Sources */,
+				F2064B737AFE884EA8B801C0 /* AppSettings.swift in Sources */,
+				9A71DFB7C07DC89B0226B87E /* RateLimitSettings.swift in Sources */,
+				7AD538C1099098FC19266940 /* QueueOperation.swift in Sources */,
+				036D2BD7B48CC90F9F42A86F /* RetryStrategy.swift in Sources */,
+				B03E29F3E40BF3F2F2FAC938 /* TaskQueue.swift in Sources */,
+				B21D33F5646452219F1C21E9 /* TikTokAPIService.swift in Sources */,
+				02ED95D79B6EABF0DA6F3EF1 /* TikTokEndpoint.swift in Sources */,
+				21992F7DCEF96A85A9E8954B /* TikTokInternalClient.swift in Sources */,
+				C17E6C7F3A7873E4F09559E3 /* TikTokRateLimiter.swift in Sources */,
+				4CB8E07C25F2DB95BA0A5F6F /* WebKitSessionExecutor.swift in Sources */,
+				9F8D79346D0110067D566563 /* EmbeddedWebLoginView.swift in Sources */,
+				11BCB43508064D45BE04B820 /* LoginSheetView.swift in Sources */,
+				092E19696EB1116A56171FF8 /* CustomCleanupView.swift in Sources */,
+				5F9FF62D96CD1A7B1A6A3D2A /* CustomCleanupViewModel.swift in Sources */,
+				93008A39417910AF1ABD8A23 /* DashboardView.swift in Sources */,
+				D3C583B35AE20FFF7076774A /* DashboardViewModel.swift in Sources */,
+				031BFA88535AFEF0573FBEBB /* SingleLikeTestView.swift in Sources */,
+				4BA62469FC70CCA924B2AEF6 /* SingleLikeTestViewModel.swift in Sources */,
+				83916377A0B29C83CCA51604 /* CleanupProgressView.swift in Sources */,
+				BD843E03A57485A7E3941D3B /* CleanupProgressViewModel.swift in Sources */,
+				B0F4ADBB94DA0CCDEB8A301C /* GDPRImportView.swift in Sources */,
+				870A9560FEBFF97DB744E560 /* CleanableItemRow.swift in Sources */,
+				455592D1BB24959E757F24A0 /* FilterSheetView.swift in Sources */,
+				9831742E346AACABB3A0205C /* ManualSelectionView.swift in Sources */,
+				5B54E7875B5E65AADD7B7313 /* CleanupResultsView.swift in Sources */,
+				5251B68EBFA723FDD3058735 /* ErrorDetailSheet.swift in Sources */,
+				8D7AFC11CAD1B22DA5E03075 /* ScannerView.swift in Sources */,
+				E5A75B99D85AE620FC6200A6 /* ScannerViewModel.swift in Sources */,
+				2DAC94FE0C3D8036315F99D8 /* DeveloperLogsView.swift in Sources */,
+				910019103CC59F49ACE7BC92 /* SettingsView.swift in Sources */,
+				51E699BE57F28622D290D732 /* ColorTheme.swift in Sources */,
+				2F937DC3006FDE40AAF74322 /* BadgeView.swift in Sources */,
+				FC8B14A87D8B5D25B24DF0C4 /* ErrorAlertSheet.swift in Sources */,
+				09036DFF4B385DF53F9CC734 /* GlassCard.swift in Sources */,
+				25643C332010E7641BD6BDC5 /* ModernProgressBar.swift in Sources */,
+				FA8AB2A3579E651BB9EE6972 /* StatCard.swift in Sources */,
+				256D78344AEC62FA30DD7916 /* TikTokButton.swift in Sources */,
+				32E8FA5610FFFE6AA1077E2E /* Typography.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B7451FC8A4D1526B49E800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098C8977FC9AA24432506BE5 /* CleanupEngineTests.swift in Sources */,
+				5F7AB4727211E6DAE94ED63C /* TaskQueueTests.swift in Sources */,
+				16E48C96B5F4D322B78243F4 /* TikTokCleanerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		272F841800B4D04C3070F12E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 786E16E2A5FF21CC8F2CD5BF /* TikTokCleaner */;
+			targetProxy = 3A9C39C2051CFD4E17C52A04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A8193A6E565F63D7B8F27FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2D119E475333A59904493C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10D7CCE47DE6580AB96D1F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TikTokCleaner/Resources/Info.plist;
+				CODE_SIGN_ENTITLEMENTS = TikTokCleaner/Resources/TikTokCleaner.entitlements;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiktokcleaner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8E826AB7C050BD3EEF146FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = TikTokCleaner/Resources/Info.plist;
+				CODE_SIGN_ENTITLEMENTS = TikTokCleaner/Resources/TikTokCleaner.entitlements;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiktokcleaner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D0504ABCA41C0D72C21C6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiktokcleaner.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikTokCleaner.app/TikTokCleaner";
+			};
+			name = Debug;
+		};
+		AE902B88DC9ED7EA360CC29A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiktokcleaner.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikTokCleaner.app/TikTokCleaner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66C115E9D28FAC0EC0475D61 /* Build configuration list for PBXProject "TikTokCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8193A6E565F63D7B8F27FB /* Debug */,
+				2D119E475333A59904493C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B210DD1C3B572803298B3FB /* Build configuration list for PBXNativeTarget "TikTokCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10D7CCE47DE6580AB96D1F39 /* Debug */,
+				A8E826AB7C050BD3EEF146FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545CD3DA43A5A0865BCB5F30 /* Build configuration list for PBXNativeTarget "TikTokCleanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0504ABCA41C0D72C21C6AB /* Debug */,
+				AE902B88DC9ED7EA360CC29A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = CFA43E02019826B730E766B0 /* Project object */;
+}
