@@ -528,7 +528,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TikTokCleaner/Resources/Info.plist;
-				CODE_SIGN_ENTITLEMENTS = TikTokCleaner/Resources/TikTokCleaner.entitlements;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +552,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = TikTokCleaner/Resources/Info.plist;
-				CODE_SIGN_ENTITLEMENTS = TikTokCleaner/Resources/TikTokCleaner.entitlements;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

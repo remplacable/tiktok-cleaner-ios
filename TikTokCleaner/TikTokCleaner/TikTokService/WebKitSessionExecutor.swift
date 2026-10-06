@@ -274,6 +274,12 @@ public final class WebKitSessionExecutor: NSObject {
     // MARK: - Actions de masse
     
     @MainActor
+    public func verifyVideoLikeStatus(awemeId: String) async throws -> Bool {
+        let digged = try await inspectUserDigged(awemeId: awemeId)
+        return digged == 1
+    }
+    
+    @MainActor
     public func unlikeVideo(awemeId: String) async throws -> (success: Bool, rawResponse: [String: Any]) {
         let report = try await executeSingleLikeEndToEndTest(awemeId: awemeId)
         return (report.isSuccess, ["status_code": report.tiktokStatusCode, "status_msg": report.tiktokStatusMsg])

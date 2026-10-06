@@ -48,15 +48,17 @@ jobs:
             CODE_SIGN_IDENTITY="" \
             AD_HOC_CODE_SIGNING_ALLOWED=YES
 
-      - name: 📱 Packaging du fichier .IPA
+      - name: 📱 Packaging et Signature Ad-Hoc du fichier .IPA
         run: |
           cd TikTokCleaner
           mkdir -p build/Payload
           cp -R build/TikTokCleaner.xcarchive/Products/Applications/TikTokCleaner.app build/Payload/
+          echo "🔐 Signature Ad-Hoc de l'application..."
+          codesign --force --deep --sign - build/Payload/TikTokCleaner.app
           cd build
           zip -r -q IPA/TikTokCleaner.ipa Payload
           rm -rf Payload
-          echo "✅ Fichier .IPA généré avec succès :"
+          echo "✅ Fichier .IPA généré et signé avec succès :"
           ls -la IPA/TikTokCleaner.ipa
 
       - name: 🚀 Sauvegarde de l'artefact .IPA (Téléchargement direct GitHub)

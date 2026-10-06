@@ -1,7 +1,7 @@
 import Foundation
 
 /// Méthode d'accès ou d'authentification utilisée pour le compte.
-public enum AccountConnectionMethod: String, Codable {
+public enum AccountConnectionMethod: String, Codable, Equatable {
     case directSession = "Session In-App (Directe)"
     case officialOAuth = "TikTok Login Kit (Officiel)"
     case importedArchive = "Archive de données GDPR"
@@ -22,7 +22,7 @@ public enum AccountConnectionMethod: String, Codable {
 }
 
 /// Modèle de compte TikTok connecté dans l'application.
-public struct TikTokAccount: Identifiable, Codable {
+public struct TikTokAccount: Identifiable, Codable, Equatable {
     public let id: String
     public var username: String
     public var displayName: String
